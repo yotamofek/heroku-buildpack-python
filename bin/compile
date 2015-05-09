@@ -108,6 +108,9 @@ bpwatch start pre_compile
   source $BIN_DIR/steps/hooks/pre_compile
 bpwatch stop pre_compile
 
+echo "........"
+echo $C_INCLUDE_PATH
+
 # If no requirements given, assume `setup.py develop`.
 if [ ! -f requirements.txt ]; then
   echo "-e ." > requirements.txt
