@@ -109,7 +109,7 @@ bpwatch start pre_compile
 bpwatch stop pre_compile
 
 echo "........"
-echo $C_INCLUDE_PATH
+export | grep lib
 
 # If no requirements given, assume `setup.py develop`.
 if [ ! -f requirements.txt ]; then
