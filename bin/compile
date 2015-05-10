@@ -113,7 +113,8 @@ bpwatch start pre_compile
 bpwatch stop pre_compile
 
 echo "........"
-export | grep lib
+ls -R /app/.apt/usr/lib
+echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 
 # If no requirements given, assume `setup.py develop`.
 if [ ! -f requirements.txt ]; then
