@@ -99,7 +99,10 @@ export CPLUS_INCLUDE_PATH=/app/.apt/usr/include:/app/.heroku/vendor/include:$BUI
 export LIBRARY_PATH=/app/.apt/usr/lib:/app/.heroku/vendor/lib:$BUILD_DIR/.heroku/vendor/lib:/app/.heroku/python/lib
 export LD_LIBRARY_PATH=/app/.apt/usr/lib:/app/.heroku/vendor/lib:$BUILD_DIR/.heroku/vendor/lib:/app/.heroku/python/lib
 export PKG_CONFIG_PATH=/app/.heroku/vendor/lib/pkg-config:$BUILD_DIR/.heroku/vendor/lib/pkg-config:/app/.heroku/python/lib/pkg-config
-export LAPACK=/app/.apt/usr/lib
+
+export BLAS=/app/.apt/usr/lib/libblas.a
+export LAPACK=/app/.apt/usr/lib/liblapack.a
+export ATLAS=/app/.apt/usr/lib/libatlas.a
 
 # Switch to the repo's context.
 cd $BUILD_DIR
